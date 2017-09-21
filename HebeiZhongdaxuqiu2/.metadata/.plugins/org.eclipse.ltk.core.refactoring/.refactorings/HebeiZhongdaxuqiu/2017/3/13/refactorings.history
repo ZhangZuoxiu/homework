@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;HebeiZhongdaxuqiu/WebRoot/Need/NeedAudit.jsp&apos; to &apos;NeedModeAudit.jsp&apos;" description="Rename resource &apos;NeedAudit.jsp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="WebRoot/Need/NeedAudit.jsp" name="NeedModeAudit.jsp" stamp="1490925060199" updateReferences="true"/>
+</session>

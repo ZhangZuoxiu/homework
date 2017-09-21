@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!--框架必需start-->
+<script type="text/javascript" src="../js/jquery-1.4.js">
+	
+</script>
+<script type="text/javascript" src="../js/framework.js">
+	
+</script>
+<link href="../css/import_basic.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" id="skin" />
+<!--框架必需end-->
+<script type="text/javascript" src="../js/nav/ddaccordion.js">
+	
+</script>
+<script type="text/javascript" src="../js/text/text-overflow.js">
+	
+</script>
+<script type="text/javascript">
+$(function() {
+	alert("x");
+}
+</script>
+<style>
+a {
+	
+}
+
+.categoryitems span {
+	width: 160px;
+}
+</style>
+
+<body leftFrame="true">
+	<div id="scrollContent">
+		<div class="arrowlistmenu">
+			<div class="menuheader expandable">系统菜单</div>
+			<ul class="categoryitems" id="category">
+						<li><a href='UserLoginSuccessFirst.jsp' target='frmright'><span>首页</span></a>
+						<li><a  href='NeedCollect.jsp' target='frmright'><span>需求征集</span></a></li>
+						<li><a  href='needLoad' target='frmright'><span>需求管理</span></a></li>
+						<li><a href='needModeAuditLoad' target='frmright' ><span>形式审核</span></a></li>
+						<li><a href='needDepartmentAuditLoad' target='frmright' ><span>部门审核</span></a></li>
+						<li><a href='NeedSearch.jsp' target='frmright' ><span>统计查询</span></a></li>
+						<li><a href='../Bumenshenhe.jsp' target='frmright' ><span>权限管理</span></a></li>
+						<li><a href='../Xiugaimima.jsp' target='frmright'><span>修改密码</span></a></li>
+						<li><a href="../Xitongjieshao.html" target="frmright"><span>系统介绍</span></a></li>
+					</ul>
+				</div>
+		</div>
+</body>
+</html>

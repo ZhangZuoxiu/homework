@@ -1,0 +1,349 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2D58F66D-C789-43C2-817D-403AD61B792D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>超市管理系统</RootNamespace>
+    <AssemblyName>超市管理系统</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="chongzhi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="chongzhi.Designer.cs">
+      <DependentUpon>chongzhi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="csharpDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>csharpDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="csharpDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>csharpDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="csharpDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>csharpDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="csharpDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>csharpDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="csharpDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>csharpDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="csharpDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>csharpDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IISHandler1.cs" />
+    <Compile Include="jinhuo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="jinhuo.Designer.cs">
+      <DependentUpon>jinhuo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="jspDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>jspDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="jspDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>jspDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="jspDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>jspDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="jspDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>jspDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="jspDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>jspDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="jspDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>jspDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resgiter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resgiter.Designer.cs">
+      <DependentUpon>Resgiter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="shouhuo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="shouhuo.Designer.cs">
+      <DependentUpon>shouhuo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="xiugai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xiugai.Designer.cs">
+      <DependentUpon>xiugai.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="chongzhi.resx">
+      <DependentUpon>chongzhi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="jinhuo.resx">
+      <DependentUpon>jinhuo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Resgiter.resx">
+      <DependentUpon>Resgiter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="shouhuo.resx">
+      <DependentUpon>shouhuo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xiugai.resx">
+      <DependentUpon>xiugai.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="csharpDataSet.xsc">
+      <DependentUpon>csharpDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="csharpDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>csharpDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="csharpDataSet.xss">
+      <DependentUpon>csharpDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="csharpDataSet1.xsc">
+      <DependentUpon>csharpDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="csharpDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>csharpDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="csharpDataSet1.xss">
+      <DependentUpon>csharpDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="csharpDataSet2.xsc">
+      <DependentUpon>csharpDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="csharpDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>csharpDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="csharpDataSet2.xss">
+      <DependentUpon>csharpDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="csharpDataSet3.xsc">
+      <DependentUpon>csharpDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="csharpDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>csharpDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="csharpDataSet3.xss">
+      <DependentUpon>csharpDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="csharpDataSet4.xsc">
+      <DependentUpon>csharpDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="csharpDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>csharpDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="csharpDataSet4.xss">
+      <DependentUpon>csharpDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="csharpDataSet5.xsc">
+      <DependentUpon>csharpDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="csharpDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>csharpDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="csharpDataSet5.xss">
+      <DependentUpon>csharpDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="jspDataSet.xsc">
+      <DependentUpon>jspDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="jspDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>jspDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="jspDataSet.xss">
+      <DependentUpon>jspDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="jspDataSet1.xsc">
+      <DependentUpon>jspDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="jspDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>jspDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="jspDataSet1.xss">
+      <DependentUpon>jspDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="jspDataSet2.xsc">
+      <DependentUpon>jspDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="jspDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>jspDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="jspDataSet2.xss">
+      <DependentUpon>jspDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="jspDataSet3.xsc">
+      <DependentUpon>jspDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="jspDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>jspDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="jspDataSet3.xss">
+      <DependentUpon>jspDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="jspDataSet4.xsc">
+      <DependentUpon>jspDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="jspDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>jspDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="jspDataSet4.xss">
+      <DependentUpon>jspDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="jspDataSet5.xsc">
+      <DependentUpon>jspDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="jspDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>jspDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="jspDataSet5.xss">
+      <DependentUpon>jspDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

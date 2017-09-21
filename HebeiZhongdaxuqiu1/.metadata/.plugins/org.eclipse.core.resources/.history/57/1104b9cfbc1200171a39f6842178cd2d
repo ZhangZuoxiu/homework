@@ -1,0 +1,103 @@
+// default package
+
+
+
+/**
+ * UsersId entity. @author MyEclipse Persistence Tools
+ */
+
+public class UsersId  implements java.io.Serializable {
+
+
+    // Fields    
+
+     private Integer userid;
+     private String username;
+     private String password;
+     private String remark;
+
+
+    // Constructors
+
+    /** default constructor */
+    public UsersId() {
+    }
+
+	/** minimal constructor */
+    public UsersId(Integer userid) {
+        this.userid = userid;
+    }
+    
+    /** full constructor */
+    public UsersId(Integer userid, String username, String password, String remark) {
+        this.userid = userid;
+        this.username = username;
+        this.password = password;
+        this.remark = remark;
+    }
+
+   
+    // Property accessors
+
+    public Integer getUserid() {
+        return this.userid;
+    }
+    
+    public void setUserid(Integer userid) {
+        this.userid = userid;
+    }
+
+    public String getUsername() {
+        return this.username;
+    }
+    
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public String getPassword() {
+        return this.password;
+    }
+    
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public String getRemark() {
+        return this.remark;
+    }
+    
+    public void setRemark(String remark) {
+        this.remark = remark;
+    }
+   
+
+
+
+   public boolean equals(Object other) {
+         if ( (this == other ) ) return true;
+		 if ( (other == null ) ) return false;
+		 if ( !(other instanceof UsersId) ) return false;
+		 UsersId castOther = ( UsersId ) other; 
+         
+		 return ( (this.getUserid()==castOther.getUserid()) || ( this.getUserid()!=null && castOther.getUserid()!=null && this.getUserid().equals(castOther.getUserid()) ) )
+ && ( (this.getUsername()==castOther.getUsername()) || ( this.getUsername()!=null && castOther.getUsername()!=null && this.getUsername().equals(castOther.getUsername()) ) )
+ && ( (this.getPassword()==castOther.getPassword()) || ( this.getPassword()!=null && castOther.getPassword()!=null && this.getPassword().equals(castOther.getPassword()) ) )
+ && ( (this.getRemark()==castOther.getRemark()) || ( this.getRemark()!=null && castOther.getRemark()!=null && this.getRemark().equals(castOther.getRemark()) ) );
+   }
+   
+   public int hashCode() {
+         int result = 17;
+         
+         result = 37 * result + ( getUserid() == null ? 0 : this.getUserid().hashCode() );
+         result = 37 * result + ( getUsername() == null ? 0 : this.getUsername().hashCode() );
+         result = 37 * result + ( getPassword() == null ? 0 : this.getPassword().hashCode() );
+         result = 37 * result + ( getRemark() == null ? 0 : this.getRemark().hashCode() );
+         return result;
+   }   
+
+
+
+
+
+}

@@ -1,0 +1,11 @@
+C:\Users\Administrator\Desktop\show4\show4\bin\Debug\show4.exe.config
+C:\Users\Administrator\Desktop\show4\show4\bin\Debug\show4.exe
+C:\Users\Administrator\Desktop\show4\show4\bin\Debug\show4.pdb
+C:\Users\Administrator\Desktop\show4\show4\obj\Debug\show4.exe
+C:\Users\Administrator\Desktop\show4\show4\obj\Debug\show4.pdb
+E:\Program Files\本学期\李静\show4\show4\bin\Debug\show4.exe.config
+E:\Program Files\本学期\李静\show4\show4\obj\Debug\show4.exe
+E:\Program Files\本学期\李静\show4\show4\obj\Debug\show4.pdb
+E:\Program Files\本学期\李静\show4\show4\bin\Debug\show4.exe
+E:\Program Files\本学期\李静\show4\show4\bin\Debug\show4.pdb
+E:\Program Files\本学期\李静\show4\show4\obj\Debug\show4.csprojResolveAssemblyReference.cache

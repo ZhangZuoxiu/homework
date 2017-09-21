@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="org.springframework.context.annotation.Scope"/>
+<fullyQualifiedTypeName name="com.sz.service.UserManager"/>
+<fullyQualifiedTypeName name="org.springframework.orm.hibernate3.HibernateTemplate"/>
+<fullyQualifiedTypeName name="com.sz.model.User"/>
+<fullyQualifiedTypeName name="com.sz.dao.UserDao"/>
+<fullyQualifiedTypeName name="com.opensymphony.xwork2.ModelDriven"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
+<fullyQualifiedTypeName name="com.opensymphony.xwork2.ActionContext"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="com.sz.model.Comment"/>
+<fullyQualifiedTypeName name="org.apache.struts2.json.annotations.JSON"/>
+<fullyQualifiedTypeName name="com.sz.dao.NeedLoadDao"/>
+<fullyQualifiedTypeName name="com.sz.service.NeedLoadManager"/>
+<fullyQualifiedTypeName name="com.opensymphony.xwork2.ActionSupport"/>
+<fullyQualifiedTypeName name="com.sz.dao.InsDao"/>
+<fullyQualifiedTypeName name="javax.persistence.Id"/>
+<fullyQualifiedTypeName name="java.security.MessageDigest"/>
+<fullyQualifiedTypeName name="com.sz.dao.Impl.UserDaoImpl"/>
+<fullyQualifiedTypeName name="org.hibernate.Session"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="java.lang.Override"/>
+<fullyQualifiedTypeName name="javax.persistence.Entity"/>
+<fullyQualifiedTypeName name="javax.annotation.Resource"/>
+<fullyQualifiedTypeName name="com.sz.vo.NeedVoIns"/>
+<fullyQualifiedTypeName name="com.sz.model.Institution"/>
+<fullyQualifiedTypeName name="com.sz.model.Need"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+</qualifiedTypeNameHistroy>

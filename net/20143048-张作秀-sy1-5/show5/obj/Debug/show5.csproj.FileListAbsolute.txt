@@ -1,0 +1,13 @@
+C:\Users\Administrator\Desktop\show5\show5\bin\Debug\show5.exe.config
+C:\Users\Administrator\Desktop\李静\show5\show5\bin\Debug\show5.exe.config
+C:\Users\Administrator\Desktop\李静\show5\show5\bin\Debug\show5.exe
+C:\Users\Administrator\Desktop\李静\show5\show5\bin\Debug\show5.pdb
+C:\Users\Administrator\Desktop\李静\show5\show5\obj\Debug\show5.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\李静\show5\show5\obj\Debug\show5.exe
+C:\Users\Administrator\Desktop\李静\show5\show5\obj\Debug\show5.pdb
+E:\Program Files\本学期\李静\show5\show5\bin\Debug\show5.exe.config
+E:\Program Files\本学期\李静\show5\show5\obj\Debug\show5.exe
+E:\Program Files\本学期\李静\show5\show5\obj\Debug\show5.pdb
+E:\Program Files\本学期\李静\show5\show5\bin\Debug\show5.exe
+E:\Program Files\本学期\李静\show5\show5\bin\Debug\show5.pdb
+E:\Program Files\本学期\李静\show5\show5\obj\Debug\show5.csprojResolveAssemblyReference.cache

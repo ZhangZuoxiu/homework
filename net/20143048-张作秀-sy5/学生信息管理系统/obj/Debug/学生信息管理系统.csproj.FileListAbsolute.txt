@@ -1,0 +1,27 @@
+E:\Program Files\本学期\李静\学生信息管理系统\学生信息管理系统\bin\Debug\学生信息管理系统.exe.config
+E:\Program Files\本学期\李静\学生信息管理系统\学生信息管理系统\bin\Debug\学生信息管理系统.exe
+E:\Program Files\本学期\李静\学生信息管理系统\学生信息管理系统\bin\Debug\学生信息管理系统.pdb
+E:\Program Files\本学期\李静\学生信息管理系统\学生信息管理系统\obj\Debug\学生信息管理系统.csprojResolveAssemblyReference.cache
+E:\Program Files\本学期\李静\学生信息管理系统\学生信息管理系统\obj\Debug\学生信息管理系统.Form1.resources
+E:\Program Files\本学期\李静\学生信息管理系统\学生信息管理系统\obj\Debug\学生信息管理系统.Main.resources
+E:\Program Files\本学期\李静\学生信息管理系统\学生信息管理系统\obj\Debug\学生信息管理系统.Properties.Resources.resources
+E:\Program Files\本学期\李静\学生信息管理系统\学生信息管理系统\obj\Debug\学生信息管理系统.csproj.GenerateResource.Cache
+E:\Program Files\本学期\李静\学生信息管理系统\学生信息管理系统\obj\Debug\学生信息管理系统.exe
+E:\Program Files\本学期\李静\学生信息管理系统\学生信息管理系统\obj\Debug\学生信息管理系统.pdb
+E:\Program Files\本学期\李静\学生信息管理系统\学生信息管理系统\obj\Debug\学生信息管理系统.chaxun.resources
+E:\Program Files\本学期\李静\学生信息管理系统\学生信息管理系统\obj\Debug\学生信息管理系统.tianjia.resources
+E:\Program Files\本学期\李静\20143048-张作秀-sy5\学生信息管理系统\bin\Debug\学生信息管理系统.exe.config
+E:\Program Files\本学期\李静\20143048-张作秀-sy5\学生信息管理系统\obj\Debug\学生信息管理系统.exe
+E:\Program Files\本学期\李静\20143048-张作秀-sy5\学生信息管理系统\obj\Debug\学生信息管理系统.pdb
+E:\李静\20143048-张作秀-sy5\学生信息管理系统\bin\Debug\学生信息管理系统.exe.config
+E:\李静\20143048-张作秀-sy5\学生信息管理系统\obj\Debug\学生信息管理系统.exe
+E:\李静\20143048-张作秀-sy5\学生信息管理系统\obj\Debug\学生信息管理系统.pdb
+E:\李静\20143048-张作秀-sy5\学生信息管理系统\bin\Debug\学生信息管理系统.exe
+E:\李静\20143048-张作秀-sy5\学生信息管理系统\bin\Debug\学生信息管理系统.pdb
+E:\李静\20143048-张作秀-sy5\学生信息管理系统\obj\Debug\学生信息管理系统.csprojResolveAssemblyReference.cache
+E:\李静\20143048-张作秀-sy5\学生信息管理系统\obj\Debug\学生信息管理系统.chaxun.resources
+E:\李静\20143048-张作秀-sy5\学生信息管理系统\obj\Debug\学生信息管理系统.Form1.resources
+E:\李静\20143048-张作秀-sy5\学生信息管理系统\obj\Debug\学生信息管理系统.Main.resources
+E:\李静\20143048-张作秀-sy5\学生信息管理系统\obj\Debug\学生信息管理系统.Properties.Resources.resources
+E:\李静\20143048-张作秀-sy5\学生信息管理系统\obj\Debug\学生信息管理系统.tianjia.resources
+E:\李静\20143048-张作秀-sy5\学生信息管理系统\obj\Debug\学生信息管理系统.csproj.GenerateResource.Cache

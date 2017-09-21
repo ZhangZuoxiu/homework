@@ -1,0 +1,13 @@
+C:\Users\Administrator\Desktop\show1\show1\bin\Debug\show1.exe.config
+C:\Users\Administrator\Desktop\李静\show1\show1\bin\Debug\show1.exe.config
+C:\Users\Administrator\Desktop\李静\show1\show1\bin\Debug\show1.exe
+C:\Users\Administrator\Desktop\李静\show1\show1\bin\Debug\show1.pdb
+C:\Users\Administrator\Desktop\李静\show1\show1\obj\Debug\show1.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\李静\show1\show1\obj\Debug\show1.exe
+C:\Users\Administrator\Desktop\李静\show1\show1\obj\Debug\show1.pdb
+E:\Program Files\本学期\李静\show1\show1\bin\Debug\show1.exe.config
+E:\Program Files\本学期\李静\show1\show1\obj\Debug\show1.exe
+E:\Program Files\本学期\李静\show1\show1\obj\Debug\show1.pdb
+E:\Program Files\本学期\李静\show1\show1\bin\Debug\show1.exe
+E:\Program Files\本学期\李静\show1\show1\bin\Debug\show1.pdb
+E:\Program Files\本学期\李静\show1\show1\obj\Debug\show1.csprojResolveAssemblyReference.cache

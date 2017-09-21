@@ -1,0 +1,14 @@
+E:\Program Files\本学期\李静\快递信息管理系统\快递信息管理系统\bin\Debug\快递信息管理系统.exe.config
+E:\Program Files\本学期\李静\快递信息管理系统\快递信息管理系统\bin\Debug\快递信息管理系统.exe
+E:\Program Files\本学期\李静\快递信息管理系统\快递信息管理系统\bin\Debug\快递信息管理系统.pdb
+E:\Program Files\本学期\李静\快递信息管理系统\快递信息管理系统\obj\Debug\快递信息管理系统.csprojResolveAssemblyReference.cache
+E:\Program Files\本学期\李静\快递信息管理系统\快递信息管理系统\obj\Debug\快递信息管理系统.Form1.resources
+E:\Program Files\本学期\李静\快递信息管理系统\快递信息管理系统\obj\Debug\快递信息管理系统.Main.resources
+E:\Program Files\本学期\李静\快递信息管理系统\快递信息管理系统\obj\Debug\快递信息管理系统.person.resources
+E:\Program Files\本学期\李静\快递信息管理系统\快递信息管理系统\obj\Debug\快递信息管理系统.Properties.Resources.resources
+E:\Program Files\本学期\李静\快递信息管理系统\快递信息管理系统\obj\Debug\快递信息管理系统.tianjia.resources
+E:\Program Files\本学期\李静\快递信息管理系统\快递信息管理系统\obj\Debug\快递信息管理系统.zhuce.resources
+E:\Program Files\本学期\李静\快递信息管理系统\快递信息管理系统\obj\Debug\快递信息管理系统.密码.resources
+E:\Program Files\本学期\李静\快递信息管理系统\快递信息管理系统\obj\Debug\快递信息管理系统.csproj.GenerateResource.Cache
+E:\Program Files\本学期\李静\快递信息管理系统\快递信息管理系统\obj\Debug\快递信息管理系统.exe
+E:\Program Files\本学期\李静\快递信息管理系统\快递信息管理系统\obj\Debug\快递信息管理系统.pdb

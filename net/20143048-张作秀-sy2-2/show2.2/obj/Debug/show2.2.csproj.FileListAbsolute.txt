@@ -1,0 +1,12 @@
+E:\新建文件夹\show2.2\show2.2\bin\Debug\show2.2.exe.config
+E:\新建文件夹\show2.2\show2.2\obj\Debug\show2.2.csprojResolveAssemblyReference.cache
+E:\新建文件夹\show2.2\show2.2\bin\Debug\show2.2.exe
+E:\新建文件夹\show2.2\show2.2\bin\Debug\show2.2.pdb
+E:\新建文件夹\show2.2\show2.2\obj\Debug\show2.2.exe
+E:\新建文件夹\show2.2\show2.2\obj\Debug\show2.2.pdb
+E:\Program Files\本学期\李静\20143048-张作秀-sy2-2\show2.2\bin\Debug\show2.2.exe.config
+E:\Program Files\本学期\李静\20143048-张作秀-sy2-2\show2.2\obj\Debug\show2.2.exe
+E:\Program Files\本学期\李静\20143048-张作秀-sy2-2\show2.2\obj\Debug\show2.2.pdb
+E:\Program Files\本学期\李静\20143048-张作秀-sy2-2\show2.2\bin\Debug\show2.2.exe
+E:\Program Files\本学期\李静\20143048-张作秀-sy2-2\show2.2\bin\Debug\show2.2.pdb
+E:\Program Files\本学期\李静\20143048-张作秀-sy2-2\show2.2\obj\Debug\show2.2.csprojResolveAssemblyReference.cache

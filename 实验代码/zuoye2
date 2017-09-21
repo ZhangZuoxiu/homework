@@ -1,0 +1,395 @@
+show.java:
+package demo;
+
+import java.util.Random;
+
+import java.util.Scanner;
+
+public class show {
+	public static void main(String[] args) {
+		// TODO 自动生成的方法存根
+		int i=0,k=0;
+		
+		int []x=new  int[30];
+			
+		int []y=new  int[30];
+			
+		int []z=new  int[30];
+			
+		int []m=new  int[30];
+			
+		int []a=new  int[30];
+		
+		int []b=new  int[30];
+		
+		Arithmetic zz =new Arithmetic();
+		
+		int N=zz.setRange();
+		
+		int g=zz.judge_Min();
+		
+		int e=zz.judge_Mul_Div();
+		
+		Scanner f=new Scanner(System.in);
+		
+		if(e==0)
+		{
+			
+			System.out.println("0:除法无余数，1：除法有余数，请选择:");//判断除法是否有余数
+		
+			k=f.nextInt();
+		}
+		
+		
+			for(i=0;i<30;i++)
+			{		
+				x[i]=new Random().nextInt(N);
+			
+				y[i]=new Random().nextInt(N);
+			
+				z[i]=new Random().nextInt(4);
+			
+				m[i]=new Random().nextInt(3);
+			
+				a[i]=new Random().nextInt(5);
+		 	
+				b[i]=new Random().nextInt(5);
+			
+			}
+			for(i=0;i<29;i++)
+			{
+				while(x[i]==x[i+1]&&y[i]==y[i+1]&&z[i]==z[i+1]&&m[i]==m[i+1]&&a[i]==a[i+1]&&a[i]==a[i+1])
+				{
+					x[i]=new Random().nextInt(N);
+					
+					y[i]=new Random().nextInt(N);
+				
+					z[i]=new Random().nextInt(4);
+				
+					m[i]=new Random().nextInt(3);
+				
+					a[i]=new Random().nextInt(5);
+			 	
+					b[i]=new Random().nextInt(5);
+					
+				}
+			}
+			for(i=0;i<30;i++)
+			{
+				
+				if(e==1)//无乘除法
+					{
+						if(g==1)//加减法无负数
+							{
+								if((z[i]==0||z[i]==2)&&(m[i]==0||m[i]==1))//无假分数加法
+									
+									zz.Add(x[i], y[i], i);
+			 		
+								else if(z[i]==0&&m[i]==2)//有假分数加法
+			 		
+									zz.Add_Imp(x[i], y[i], a[i], b[i], i);
+			 	
+								else if((z[i]==1||z[i]==3)&&(m[i]==0||m[i]==1)) //无假分数无负数减法
+			 			
+									zz.Sub_Minno(x[i], y[i], i);
+								
+								else if(z[i]==1&&m[i]==2)//有假分数无负数减法
+									
+										zz.Sub_Minno_Imp(x[i], y[i], a[i], b[i], i);
+				
+							}
+					
+				
+				else if(g==0)//加减法有负数
+					
+					{
+					
+					 	if((z[i]==0||z[i]==2)&&(m[i]==0||m[i]==1))//无假分数加法
+					 		
+					 		zz.Add(x[i], y[i], i);
+					 	
+					 	else if(z[i]==0&&m[i]==2)//有假分数加法
+					 		
+					 		zz.Add_Imp(x[i], y[i], a[i], b[i], i);
+					 	
+					 	else if((z[i]==1||z[i]==3)&&(m[i]==0||m[i]==1)) //无假分数有负数减法
+					 			
+					 		zz.Sub_Min(x[i], y[i], i);
+					 	
+					 	else if(z[i]==1&&m[i]==2)//有假分数有负数减法
+							
+							zz.Sub_Min_Imp(x[i], y[i], a[i], b[i], i);
+					}			
+					}
+				else if(e==0)//有乘除法
+					
+					{
+						
+								if(g==1)//加减法无负数
+									
+									{
+						
+										if(z[i]==0&&(m[i]==0||m[i]==1))//无假分数加法
+					 		
+											zz.Add(x[i], y[i], i);
+						 	
+										else if(z[i]==0&&m[i]==2)//有假分数加法
+						 		
+											zz.Add_Imp(x[i], y[i], a[i], b[i], i);
+						 	
+										else if(z[i]==1&&(m[i]==0||m[i]==1)) //无假分数无负数减法
+						 			
+											zz.Sub_Minno(x[i], y[i], i);
+										
+										else if(z[i]==1&&m[i]==2)//有假分数无负数减法
+								
+											zz.Sub_Minno_Imp(x[i], y[i], a[i], b[i], i);
+
+										if(z[i]==2&&(m[i]==0||m[i]==1))//无假分数乘法
+								 		
+											zz.Mul(x[i], y[i], i);
+									 	
+									 	else if(z[i]==2&&m[i]==2)//有假分数乘法
+									 		
+									 		zz.Mul_Imp(x[i], y[i], a[i], b[i], i);
+										
+										if(k==0)//无假分数无余数除法
+										{
+											if(z[i]==3&&(m[i]==0||m[i]==1))
+												
+											zz.Div(x[i], y[i], i);
+										
+												else if(z[i]==3&&m[i]==2)//有假分数无余数除法
+												
+													zz.Div_Imp(x[i], y[i], a[i], b[i], i);
+										}
+										else if(k==1)//除法有余数
+							
+											{
+											
+												if(z[i]==3&&(m[i]==0||m[i]==1))//无假分数有余数除法
+							
+													zz.Div_Rem(x[i], y[i], i);
+												
+												else if(z[i]==3&&m[i]==2)//有假分数有余数除法
+									
+													zz.Div_Imp_Rem(x[i], y[i], a[i], b[i], i);
+											}
+					 
+										}
+				
+								else if(g==0)//加减法有负数
+									
+									{
+						
+
+									if(z[i]==0&&(m[i]==0||m[i]==1))//无假分数加法
+				 		
+										zz.Add(x[i], y[i], i);
+					 	
+									else if(z[i]==0&&m[i]==2)//有假分数加法
+					 		
+										zz.Add_Imp(x[i], y[i], a[i], b[i], i);
+					 	
+									else if(z[i]==1&&(m[i]==0||m[i]==1)) //无假分数无负数减法
+					 			
+										zz.Sub_Min(x[i], y[i], i);
+									
+									else if(z[i]==1&&m[i]==2)//有假分数无负数减法
+							
+										zz.Sub_Min_Imp(x[i], y[i], a[i], b[i], i);
+
+									if(z[i]==2&&(m[i]==0||m[i]==1))//无假分数乘法
+							 		
+										zz.Mul(x[i], y[i], i);
+								 	
+								 	else if(z[i]==2&&m[i]==2)//有假分数乘法
+								 		
+								 		zz.Mul_Imp(x[i], y[i], a[i], b[i], i);
+									
+									if(k==0)//无假分数无余数除法
+									{
+										if(z[i]==3&&(m[i]==0||m[i]==1))
+											
+										zz.Div(x[i], y[i], i);
+									
+											else if(z[i]==3&&m[i]==2)//有假分数无余数除法
+											
+												zz.Div_Imp(x[i], y[i], a[i], b[i], i);
+									}
+									else if(k==1)//除法有余数
+									{
+										
+											if(z[i]==3&&(m[i]==0||m[i]==1))//无假分数有余数除法
+						
+												zz.Div_Rem(x[i], y[i], i);
+											
+											else if(z[i]==3&&m[i]==2)//有假分数有余数除法
+								
+												zz.Div_Imp_Rem(x[i], y[i], a[i], b[i], i);
+									}
+											
+								}
+					
+					}
+			}
+			}
+		
+	}
+Arithmetic.java:
+package demo;
+
+import java.util.Random;
+import java.util.Scanner;
+
+public class Arithmetic {
+	
+	Scanner f=new Scanner(System.in);
+
+	public int setRange()//设置数值范围
+	{
+
+		System.out.println("请输入要进行计算的数值的范围：");
+		
+	 	int N=f.nextInt();
+		
+		return N;
+	}
+	
+	public int judge_Min()//判断加减法是否有负数
+	{
+		System.out.println("0:加减法有负数，1：加减法无负数，请选择:");
+		
+		int g=f.nextInt();
+		
+		return g;
+	}
+	
+	public int judge_Mul_Div()//判断是否有乘除法
+	{
+		System.out.println("0:有乘除法，1：没有乘除法，请选择:");
+		
+		int e=f.nextInt();
+		
+		return e;
+	}
+	
+	
+	public void Add(int x,int y,int i)//无假分数加法
+	{
+		
+		System.out.println(i+1+": "+x+"+"+y+"=");
+	}
+	public void Add_Imp(int x,int y,int a,int b,int i)//有假分数加法
+	{
+		while(a==0||b==0)
+		{
+			a=new Random().nextInt(5);
+	 		
+			b=new Random().nextInt(5);
+		}
+		System.out.println(i+1+": "+"("+x*a+"/"+x+")"+"+"+"("+y*b+"/"+y+")"+"=");
+	}
+	public void Sub_Minno(int x,int y,int i)//无负数无假分数减法
+	{
+		if(x>y)
+				
+			System.out.println(i+1+": "+x+"-"+y+"=");
+
+		else System.out.println(i+1+": "+y+"-"+x+"=");
+	}
+	public void Sub_Minno_Imp(int x,int y,int a,int b,int i)//无负数有假分数减法
+	{
+		while(a==0||b==0)
+ 			
+		{
+			a=new Random().nextInt(5);
+
+			b=new Random().nextInt(5);
+		}
+
+		if(x>y)
+
+			System.out.println(i+1+": "+"("+x*a+"/"+x+")"+"-"+"("+y*b+"/"+y+")"+"=");
+
+		else System.out.println(i+1+": "+"("+y*b+"/"+y+")"+"-"+"("+x*a+"/"+x+")"+"=");
+	}
+	public void Sub_Min(int x,int y,int i)//有负数无假分数减法
+	{
+		System.out.println(i+1+": "+x+"-"+y+"=");
+	}
+	public void Sub_Min_Imp(int x,int y,int a,int b,int i)//有负数有假分数减法
+	{
+		while(a==0||b==0)
+ 			
+		{
+			a=new Random().nextInt(5);
+
+			b=new Random().nextInt(5);
+		}
+
+			System.out.println(i+1+": "+"("+x*a+"/"+x+")"+"-"+"("+y*b+"/"+y+")"+"=");
+
+	}
+	public void Mul(int x,int y,int i)//无假分数乘法
+	{
+		System.out.println(i+1+": "+x+"*"+y+"=");
+	}
+	public void Mul_Imp(int x,int y,int a,int b,int i)//有假分数乘法
+	{
+		while(a==0||b==0)
+ 			
+			{
+				a=new Random().nextInt(5);
+	
+				b=new Random().nextInt(5);
+			}
+
+			System.out.println(i+1+": "+"("+x*a+"/"+x+")"+"*"+"("+y*b+"/"+y+")"+"=");
+	}
+	public void Div(int x,int y,int i)//无假分数无余数除法
+	{
+		while(y==0||x%y!=0)
+		{
+			x=new Random().nextInt(100);
+			
+			y=new Random().nextInt(100);
+		}
+	
+			System.out.println(i+1+": "+x+"/"+y+"=");
+	}
+	public void Div_Imp(int x,int y,int a,int b,int i)//有假分数无余数除法
+	{
+		while(y==0||a==0||b==0||x%y!=0)
+		{
+			y=new Random().nextInt(100);
+			
+			a=new Random().nextInt(10);
+
+			b=new Random().nextInt(10);
+		}
+		
+		System.out.println(i+1+": "+"("+x*a+"/"+x+")"+"/"+"("+y*b+"/"+y+")"+"=");
+	}
+	public void Div_Rem(int x,int y,int i)//无假分数有余数除法
+	{
+		while(y==0)
+		{
+			
+			y=new Random().nextInt(100);
+		}
+		System.out.println(i+1+": "+x+"/"+y+"=");
+	}
+	public void Div_Imp_Rem(int x,int y,int a,int b,int i)//有假分数有余数除法
+	{
+		while(y==0||a==0||b==0)
+		{
+			y=new Random().nextInt(100);
+			
+			a=new Random().nextInt(10);
+
+			b=new Random().nextInt(10);
+		}
+		System.out.println(i+1+": "+"("+x*a+"/"+x+")"+"/"+"("+y*b+"/"+y+")"+"=");
+	}
+}

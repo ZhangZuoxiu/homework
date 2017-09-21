@@ -1,0 +1,29 @@
+package com.domain;
+
+import java.util.*;
+
+import org.springframework.orm.hibernate3.support.HibernateDaoSupport;
+
+public class LoginDAOImpl extends HibernateDaoSupport implements LoginDAO
+{
+	
+	public LoginDAOImpl()
+	{
+		System.out.println("构造方法被调用2");
+	}
+	
+	@SuppressWarnings("unchecked")
+	@Override
+	public boolean login(String username, String password) {
+		//System.out.println("y");
+       /* List<Users> u=this.getHibernateTemplate().find("from Users where username=? and password=?",username,password);
+        //System.out.println("u"+u);
+        Boolean flag=false;
+        if(u.size()>0){
+            flag=true;
+        }
+        return flag;*/
+		return true;
+    }
+
+}

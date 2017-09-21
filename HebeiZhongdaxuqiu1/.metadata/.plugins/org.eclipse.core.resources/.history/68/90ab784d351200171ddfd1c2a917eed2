@@ -1,0 +1,16 @@
+package com.domain;
+
+public class LoginServiceImpl implements LoginService
+{
+
+	private LoginDAO logindao;
+
+    public void setLogindao(LoginDAOImpl loginDao) {
+        this.logindao = loginDao;
+    }
+
+    @Override
+    public boolean login(String username, String password) {
+        return logindao.login(username, password);
+    }
+}

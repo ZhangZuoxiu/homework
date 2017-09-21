@@ -1,0 +1,154 @@
+package com.sz.dao.Impl;
+
+import java.util.List;
+
+import javax.annotation.Resource;
+
+import org.springframework.orm.hibernate3.HibernateTemplate;
+import org.springframework.stereotype.Component;
+
+import com.sz.dao.NeedDao;
+import com.sz.model.Need;
+import com.sz.vo.NeedVoIns;
+
+@Component("needDao")
+public class NeedDaoImpl implements NeedDao{
+
+	private HibernateTemplate hibernateTemplate;
+	
+	@Override
+	public boolean addNeed(Need need) {
+		try{
+			hibernateTemplate.save(need);
+		}catch(Exception e){
+			e.printStackTrace();
+			return false;
+		}
+		return true;
+	}
+	@Override
+	public List<Need> getNeeds() {
+		List<Need> needs =  hibernateTemplate.find("from Need");
+		return needs;
+	}
+	
+	@Override
+	public Need getNeedbyWJID(int WJID) {
+		Need need = (Need) hibernateTemplate.get(Need.class, WJID);
+		return need;
+	}
+	
+	@Override
+	public boolean deleteNeedbyWJID(int WJID) {
+		boolean b= true;
+		try{
+			hibernateTemplate.delete(hibernateTemplate.get(Need.class, WJID));
+		}catch(Exception e){
+			e.printStackTrace();
+			b=false;
+		}
+		return b;
+	}
+	
+	@Override
+	public List<Need> getWeishenheNeeds() {
+		List<Need> needs =  hibernateTemplate.find("from Need n where n.XSSFSH="+0);
+		return needs;
+	}
+	
+	@Override
+	public boolean XXSHglcsIN(int wjid, String glcsbm) {
+		boolean b =true;
+		try {
+			Need need = (Need) hibernateTemplate.load(Need.class, wjid);
+			need.setGLCSBM(glcsbm);
+			need.setXSSFSH(1);
+			hibernateTemplate.update(need);
+		} catch (Exception e) {
+			b= false;
+		}
+		return b;
+	}
+	@Override
+	public boolean XXSHyjIN(int wjid, String xsshyj) {
+		boolean b =true;
+		try {
+			Need need = (Need) hibernateTemplate.load(Need.class, wjid);
+			need.setXSSHYJ(xsshyj);
+			need.setXSSFSH(2);
+			hibernateTemplate.update(need);
+		} catch (Exception e) {
+			b= false;
+		}
+		return b;
+	}
+	@Override
+	public List<Need> getWeiBMshenheNeeds() {
+		List<Need> needs =  hibernateTemplate.find("from Need n where n.XSSFSH ="+1+" and n.BMSFSH="+0);
+		return needs;
+	}
+	
+	@Override
+	public boolean BMSHTG(int wJID) {
+		boolean b =true;
+		try {
+			Need need = (Need) hibernateTemplate.load(Need.class, wJID);
+			
+			need.setBMSFSH(1);
+			hibernateTemplate.update(need);
+		} catch (Exception e) {
+			b= false;
+		}
+		return b;
+	}
+	@Override
+	public boolean BMSHyjIN(int wjid, String bmshyj) {
+		boolean b =true;
+		try {
+			Need need = (Need) hibernateTemplate.load(Need.class, wjid);
+			need.setBMSHYJ(bmshyj);
+			need.setBMSFSH(2);
+			hibernateTemplate.update(need);
+		} catch (Exception e) {
+			b= false;
+		}
+		return b;
+	}
+	
+	@Override
+	public List<NeedVoIns> getNeedsbyTiaojians(String zhuangtaiTiaojian,
+			int zhuangtaiVal, String biaoyin1, String tiaojian1,
+			String biaoyin2, String tiaojian2) {
+		String sql = "";
+		String first = "";
+		String firstContent = "";
+		String second = "";
+		String secondContent ="";
+		String third = "";
+		String thirdContent = "";
+		
+		if("".equals(zhuangtaiTiaojian))
+		{
+			first = "1";
+			firstContent = "1";
+		}else
+		{
+			first = "n."+zhuangtaiTiaojian;
+			firstContent = zhuangtaiVal+"";
+		}
+		
+		
+		sql = "from Need n , Institution I where "+first+"="+firstContent+" and n."+biaoyin1+"='"+tiaojian1+"' and I."+biaoyin2+"='"+tiaojian2+"' and I.JGQC = n.JGQC";
+		List<NeedVoIns> needVoIns = hibernateTemplate.find(sql);
+		return needVoIns;
+	}
+	
+	public HibernateTemplate getHibernateTemplate() {
+		return hibernateTemplate;
+	}
+	@Resource
+	public void setHibernateTemplate(HibernateTemplate hibernateTemplate) {
+		this.hibernateTemplate = hibernateTemplate;
+	}
+	
+}

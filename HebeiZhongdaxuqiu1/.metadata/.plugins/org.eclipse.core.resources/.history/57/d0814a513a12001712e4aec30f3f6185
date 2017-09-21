@@ -1,0 +1,71 @@
+package com.domain;
+
+import com.opensymphony.xwork2.ActionSupport;
+
+public class LoginAction extends ActionSupport
+{ 
+    private LoginService loginservice;
+    private String username;
+    private String password;
+	/**
+	 * @return the username
+	 */
+	public String getUsername()
+	{
+		return username;
+	}
+	/**
+	 * @param username the username to set
+	 */
+	public void setUsername(String username)
+	{
+		this.username = username;
+	}
+	/**
+	 * @return the password
+	 */
+	public String getPassword()
+	{
+		return password;
+	}
+	/**
+	 * @param password the password to set
+	 */
+	public void setPassword(String password)
+	{
+		this.password = password;
+	}
+	/**
+	 * @return the loginservice
+	 */
+	public LoginService getLoginservice()
+	{
+		return loginservice;
+	}
+	/**
+	 * @param loginservice the loginservice to set
+	 */
+	public void setLoginservice(LoginService loginservice)
+	{
+		this.loginservice = loginservice;
+	}
+	public String login()
+	{		
+		//System.out.println(loginservice.login(username, password));
+		try
+		{
+			boolean flag=loginservice.login(username, password);
+			if(flag)
+			{return "Success";}
+			else 
+			{
+				return "input";
+			}
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+	}
+  
+}

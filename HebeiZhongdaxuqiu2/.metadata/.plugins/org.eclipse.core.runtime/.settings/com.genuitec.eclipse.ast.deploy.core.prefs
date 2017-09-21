@@ -1,0 +1,13 @@
+eclipse.preferences.version=1
+tomcat7Server.HebeiZhongdaxuqiu.IEARProjectName=
+tomcat7Server.HebeiZhongdaxuqiu.altContextRoot=
+tomcat7Server.HebeiZhongdaxuqiu.contextRoot=/HebeiZhongdaxuqiu
+tomcat7Server.HebeiZhongdaxuqiu.deployIsOverProject=false
+tomcat7Server.HebeiZhongdaxuqiu.deploymentPath=E\:\\TomcatInstall\\webapps\\HebeiZhongdaxuqiu
+tomcat7Server.HebeiZhongdaxuqiu.isDeployed=true
+tomcat7Server.HebeiZhongdaxuqiu.isExploded=true
+tomcat7Server.HebeiZhongdaxuqiu.isUptoDate=true
+tomcat7Server.HebeiZhongdaxuqiu.noFileCopy=false
+tomcat7Server.HebeiZhongdaxuqiu.shouldBackup=false
+tomcat7Server.HebeiZhongdaxuqiu.shouldOverwrite=false
+tomcat7Server.HebeiZhongdaxuqiu.type=WebDeployment

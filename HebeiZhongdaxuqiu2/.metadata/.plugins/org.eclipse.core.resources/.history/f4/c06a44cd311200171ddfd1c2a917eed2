@@ -1,0 +1,9 @@
+package snippet;
+
+public class Snippet {
+	 private Integer userid;
+	     private String username;
+	     private String password;
+	     private String remark;
+}
+

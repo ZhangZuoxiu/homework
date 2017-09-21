@@ -1,0 +1,5 @@
+C:\Users\Administrator\Desktop\show2\show2\bin\Debug\show2.exe.config
+C:\Users\Administrator\Desktop\show2\show2\bin\Debug\show2.exe
+C:\Users\Administrator\Desktop\show2\show2\bin\Debug\show2.pdb
+C:\Users\Administrator\Desktop\show2\show2\obj\Debug\show2.exe
+C:\Users\Administrator\Desktop\show2\show2\obj\Debug\show2.pdb

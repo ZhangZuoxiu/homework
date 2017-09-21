@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+
+    <constant name="struts.devMode" value="true"/>
+    <constant name="struts.i18n.encoding" value="utf-8" />
+     <package name="User" namespace="/" extends="struts-default" >
+		
+        <action name="userRegister" class="userAction" method="register">
+           <result  name="success" >/User/UserRegisterSuccess.jsp</result>
+           <result  name="fail" >/User/UserRegisterFail.jsp</result> 
+        </action>
+        
+        <action name="userLogin" class="userAction" method="login">
+          <result name="success">/Need/UserLoginSuccess.jsp</result>
+          <result name="fail" >/User/UserLoginFail.jsp</result> 
+        </action>
+    </package>
+	 <package name="Need" namespace="/" extends="struts-default" >
+	 	<action name="needSubmit" class="needAction" method="needSubmit">
+           <result  name="success" >/Need/UserLoginSuccess.jsp</result>
+           <result  name="fail" >/Need/UserLoginSuccess.jsp</result>
+        </action>
+        <action name="needLoad" class="needAction" method="needLoad">
+           <result  name="success" >/Need/NeedManager.jsp</result>
+        </action>
+        <action name="needUpdateLoad" class="needAction" method="needUpdateLoad">
+           <result  name="success" >/Need/NeedUpdateLoad.jsp</result>
+        </action>
+        <action name="needDelete" class="needAction" method="needDelete">
+           <result name="success" type="redirectAction">needLoad</result>
+        </action>
+        <action name="needCheck" class="needAction" method="needCheck">
+           <result name="success">/Need/NeedCheck.jsp</result>
+        </action>
+        <action name="needModeAuditLoad" class="needAction" method="needModeAuditLoad">
+           <result name="success">/Need/NeedModeAudit.jsp</result>
+        </action>
+        <action name="needModeAudit" class="needAction" method="needModeAudit">
+           <result name="success">/Need/NeedModeAuditPage.jsp</result>
+        </action>
+        <action name="needXXSHTG" class="needAction" method="needXXSHTG">
+           <result name="success">/Need/NeedXXSHTGIN.jsp</result>
+        </action>
+         <action name="needTJXXSHTG" class="needAction" method="needTJXXSHTG">
+           <result name="success" type="redirectAction">needModeAuditLoad</result>
+        </action>
+         <action name="needXXSHBTG" class="needAction" method="needXXSHBTG">
+           <result name="success">/Need/NeedXXSHBTGIN.jsp</result>
+        </action>
+         <action name="needTJXXSHBTG" class="needAction" method="needTJXXSHBTG">
+           <result name="success" type="redirectAction">needModeAuditLoad</result>
+        </action>
+        <action name="needDepartmentAuditLoad" class="needAction" method="needDepartmentAuditLoad">
+           <result name="success">/Need/NeedDepartmentAudit.jsp</result>
+        </action>
+        <action name="needDepartmentAudit" class="needAction" method="needDepartmentAudit">
+           <result name="success">/Need/NeedDepartmentAuditPage.jsp</result>
+        </action>
+        <action name="needBMSHTG" class="needAction" method="needBMSHTG">
+           <result name="success" type="redirectAction">needDepartmentAuditLoad</result>
+        </action>
+         <action name="needBMSHBTG" class="needAction" method="needBMSHBTG">
+           <result name="success">/Need/NeedBMSHBTGIN.jsp</result>
+        </action>
+        <action name="needTJBMSHBTG" class="needAction" method="needTJBMSHBTG">
+           <result name="success" type="redirectAction">needDepartmentAuditLoad</result>
+        </action>
+	 </package>
+	
+	
+
+	<package name="ajax" extends="json-default">
+	   <action name="loadGkglbms" class="NeedLocalAreaAction" method="loadGkglbms">
+			<result name="success" type="json"></result>
+		</action>
+		<action name="loadLocalAreInfo" class="NeedLocalAreaAction" method="loadLocalAreInfo">
+			<result name="success" type="json"></result>
+		</action> 
+		<action name="loadFirstGmjjhys" class="NeedLocalAreaAction" method="loadFirstGmjjhys">
+			<result name="success" type="json"></result>
+		</action> 
+		<action name="loadScondGmjjhys" class="NeedLocalAreaAction" method="loadScondGmjjhys">
+			<result name="success" type="json"></result>
+		</action>
+		<action name="loadThirdGmjjhys" class="NeedLocalAreaAction" method="loadThirdGmjjhys">
+			<result name="success" type="json"></result>
+		</action>
+		<action name="loadFirstXkfls" class="NeedLocalAreaAction" method="loadFirstXkfls">
+			<result name="success" type="json"></result>
+		</action>
+		<action name="loadScondXkfls" class="NeedLocalAreaAction" method="loadScondXkfls">
+			<result name="success" type="json"></result>
+		</action>
+		<action name="loadThirdXkfls" class="NeedLocalAreaAction" method="loadThirdXkfls">
+			<result name="success" type="json"></result>
+		</action>
+		<action name="loadglcs" class="NeedLoadGlcs" method="loadglcs">
+			<result name="success" type="json"></result>
+		</action>
+		<action name="getNeedsbyTiaojian" class="needSearchAction" method="getNeedsbyTiaojian">
+			<result name="success" type="json"></result>
+		</action>
+	</package>
+    <!-- Add packages here -->
+
+</struts>

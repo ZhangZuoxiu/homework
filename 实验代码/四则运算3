@@ -1,0 +1,141 @@
+package demo;
+import java.util.Random;
+import java.util.Scanner;
+
+
+class Node
+	{
+		public Node root;
+		public Node left;
+		public Node right;
+		public String weight;
+		
+		public void setroot(Node r) {root=r;}//根植
+		
+		public void setleft(Node l)	{left=l;}//左子树
+		
+		public void setright(Node r) {right=r;}//右子树
+		
+		public void setweight(String w) {weight=w;}//判断运算符号
+		
+		public String getweight() {return weight;}
+	}
+	
+	
+public  class show{
+	 
+	//控制式子长度
+	static int flag=0;
+	static	String length="";
+	
+	static void setTree(Node zz,Node root)//初始化树
+	{
+		
+		zz.left=new Node();
+		zz.right=new Node();
+		zz.setroot(root);
+		int panding=new Random().nextInt(2);
+		
+		if(panding==1)
+		{
+			//生成符号
+			//System.out.println("生成符号");
+			int fuhao=new Random().nextInt(4);
+			if(fuhao==0) zz.setweight("+");
+			if(fuhao==1) zz.setweight("-");
+			if(fuhao==2) zz.setweight("*");
+			if(fuhao==3) zz.setweight("*");
+			setTree(zz.left,zz);
+			setTree(zz.right,zz);
+		}
+		if(panding==0)
+		{
+			//System.out.println("生成数字");
+			int num=new Random().nextInt(100);
+			zz.setweight(""+num);
+			flag++;
+		}
+		
+	}
+
+	static 	void inOrderTraverse(Node zz)//遍历生成算式
+	{
+		
+		if(zz.weight==null) return;
+		else{
+			length=length+"(";
+			inOrderTraverse(zz.left);
+			length=length+zz.getweight();
+			inOrderTraverse(zz.right);
+			length=length+")";
+			
+		}
+		
+	}
+	static	int evaluateExpTree(Node zz)//求值
+	{
+		int lvalue=0,rvalue=0;
+		int ans=0;
+		if(zz.left.getweight()!=null){
+			lvalue=evaluateExpTree(zz.left);
+		    rvalue=evaluateExpTree(zz.right);
+		}
+		else 
+		{	
+			ans=Integer.parseInt(zz.getweight());
+		}
+		if(zz.weight.charAt(0)=='+') ans=lvalue+rvalue;
+		if(zz.weight.charAt(0)=='-') ans=lvalue-rvalue;
+		if(zz.weight.charAt(0)=='*') ans=lvalue*rvalue;
+		if(zz.weight.charAt(0)=='/') ans=lvalue/rvalue;
+		return ans;
+	}
+	
+	
+	public static  void main(String args[])
+	{
+		    int j=0;
+			System.out.println("请在等号后输入结果：");
+			Scanner zhi=new Scanner(System.in);
+			int []b=new int[30];
+			for(int i=0;i<30;i++)
+			{
+				Node initial = new Node();
+			    Node ltree=new Node();
+				Node rtree=new Node();
+				initial.setweight("+");
+				
+				initial.setleft(ltree);
+				initial.setright(rtree);
+				//判断数字位数，超过则重新出题
+				while(flag==0||flag>4)
+				{
+					flag=0;setTree(ltree,initial);
+				}
+				flag=0;
+				while(flag==0||flag>4)
+				{
+					flag=0;setTree(rtree,initial);
+				}
+				
+				inOrderTraverse(initial);
+				length=length+"=";
+				System.out.println(length);
+				b[i]=zhi.nextInt();
+				if(b[i]==evaluateExpTree(initial))
+				{
+				j++;
+				System.out.println("结果正确");
+				
+				}
+				else System.out.println("结果错误，正确结果为："+evaluateExpTree(initial)); 
+				length="";
+				flag=0;
+				
+			
+			}
+			
+				System.out.println("做对了"+j+"道题");
+	}
+
+}

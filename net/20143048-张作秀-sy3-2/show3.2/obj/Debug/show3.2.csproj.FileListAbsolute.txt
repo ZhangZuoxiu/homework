@@ -1,0 +1,9 @@
+E:\Program Files\本学期\李静\show3.2\show3.2\bin\Debug\show3.2.exe.config
+E:\Program Files\本学期\李静\show3.2\show3.2\obj\Debug\show3.2.csprojResolveAssemblyReference.cache
+E:\Program Files\本学期\李静\show3.2\show3.2\obj\Debug\show3._2.Form1.resources
+E:\Program Files\本学期\李静\show3.2\show3.2\obj\Debug\show3._2.Properties.Resources.resources
+E:\Program Files\本学期\李静\show3.2\show3.2\obj\Debug\show3.2.csproj.GenerateResource.Cache
+E:\Program Files\本学期\李静\show3.2\show3.2\bin\Debug\show3.2.exe
+E:\Program Files\本学期\李静\show3.2\show3.2\bin\Debug\show3.2.pdb
+E:\Program Files\本学期\李静\show3.2\show3.2\obj\Debug\show3.2.exe
+E:\Program Files\本学期\李静\show3.2\show3.2\obj\Debug\show3.2.pdb

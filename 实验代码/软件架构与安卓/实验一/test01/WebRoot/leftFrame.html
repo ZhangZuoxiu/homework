@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>testHtml.html</title>
+	
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <script type="text/javascript" src="js/jquery-1.4.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet"/>
+  </head>
+  <body background="blue">
+    <div class="container">
+	<div class="row clearfix">
+		<div class="col-md-12 column" style="padding-right:0;padding-left:0;">
+			<div class="list-group" >                                                                                                          
+				<a href="#" class="list-group-item active" style="width:100%">客房信息管理</a>
+				<div id="home1">
+				<div class="list-group-item">
+					<a href="house/addHouse.jsp" target='mainFrame'>添加客房信息</a>
+				</div>
+				<div class="list-group-item">
+					<a href="findHouseServlet?type=find" target='mainFrame'>查询客房信息</a>
+				</div>	
+			</div>
+			<div class="list-group" >                                                                                                          
+				<a href="#" class="list-group-item active" style="width:100%">房间操作</a>
+				<div id="home2">
+				<div class="list-group-item">
+					<a href="checkInServlet?type=checkIn" target='mainFrame'>入住</a>
+				</div>
+				<div class="list-group-item">
+					<a href="checkOutServlet?type=checkOut" target='mainFrame'>退房</a>
+				</div>	
+			</div>		
+			</div>
+		</div>
+	</div>
+ </div>
+ </div>
+  </body>
+   <script>
+   $(function(){
+  //事先隐藏home，help模块内容
+   $("#home1").hide(60);
+   $("#home2").hide(60);
+   //点击home，help内容隐藏
+   $(".active:eq(0)").click(function(){
+   $("#home1").slideToggle(60);
+   $("#home2").hide(60);
+   
+   });
+   $(".active:eq(1)").click(function(){
+   $("#home2").slideToggle(60);
+   $("#home1").hide(60);
+   });
+
+   });
+   
+  </script>
+</html>

@@ -1,0 +1,101 @@
+package com.sz.action;
+
+import java.util.Map;
+
+import javax.annotation.Resource;
+
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Component;
+
+import com.opensymphony.xwork2.ActionContext;
+import com.opensymphony.xwork2.ActionSupport;
+import com.sz.model.User;
+import com.sz.service.UserManager;
+import com.sz.service.Impl.UserManagerImpl;
+import com.sz.vo.UserRegisterInfo;
+@Component("userAction")
+@Scope("prototype")
+public class UserAction extends ActionSupport {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	private UserRegisterInfo userRegisterInfo ;
+	private UserManager userManager;
+	private User user;
+	private String randcode;
+	
+	public String  register(){
+		
+		String flag="";
+		if(userManager.exits(user))
+		{
+			flag="fail";
+		}else
+		{
+			userManager.addUser(user);
+			flag="success";
+		}
+			
+		return flag;
+	}
+	
+	public String login(){
+		
+		String flag="";
+		ActionContext actionContext = ActionContext.getContext();
+		Map<String,Object> request = (Map) actionContext.get("request");
+		Map<String, Object> session = actionContext.getSession();
+		String rightcode= (String) session.get("rand");
+		if(!randcode.equals(rightcode))
+		{
+			System.out.println("输入的验证码："+randcode+"验证码："+rightcode);
+			request.put("errorInfo", "验证码错误");
+			flag="fail";
+		}else
+		{
+			if(userManager.loginCheck(user))
+			{
+				session.put("YHM", user.getYHM());
+				session.put("JGQC",userManager.getJGQC(user.getYHM()));
+				flag = "success";
+			}
+			else
+			{
+				request.put("errorInfo", "用户名或密码错误");	
+				flag = "fail";
+			}
+		}
+		System.out.println(flag);
+		return flag;
+	}
+	
+
+	public UserManager getUserManager() {
+		return userManager;
+	}
+	@Resource
+	public void setUserManager(UserManager userManager) {
+		this.userManager = userManager;
+	}
+
+
+	public User getUser() {
+		return user;
+	}
+
+	public void setUser(User user) {
+		this.user = user;
+	}
+
+	public String getRandcode() {
+		return randcode;
+	}
+
+	public void setRandcode(String randcode) {
+		this.randcode = randcode;
+	}
+
+
+}
